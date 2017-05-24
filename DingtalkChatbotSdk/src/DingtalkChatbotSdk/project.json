@@ -1,6 +1,6 @@
 ﻿{
   "name": "DingtalkChatbotSdk",
-  "version": "1.0.0-*",
+  "version": "1.0.1-*",
   "authors": [ "zdyu" ],
   "description": "钉钉群机器人SDK",
   "packOptions": {

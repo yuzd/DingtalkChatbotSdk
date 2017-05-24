@@ -13,7 +13,7 @@ namespace UnitTest45
         [TestMethod]
         public void TestMethod3()
         {
-            var result = DingDingClient.SendMessageAsync(WebHookUrl, "测试").Result;
+            var result = DingDingClient.SendMessageAsync(WebHookUrl, "测试",isAtAll:true).Result;
             Assert.AreEqual(result.ErrCode, 0);
         }
 

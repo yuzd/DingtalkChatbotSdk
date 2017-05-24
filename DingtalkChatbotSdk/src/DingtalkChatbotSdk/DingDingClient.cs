@@ -20,8 +20,9 @@ namespace DingtalkChatbotSdk
         /// <param name="webHookUrl">webhook的url地址</param>
         /// <param name="message">文本内容</param>
         /// <param name="AtMobiles">@的手机号列表</param>
+        /// <param name="isAtAll">是否@所有人</param>
         /// <returns></returns>
-        public static async Task<SendResult> SendMessageAsync(string webHookUrl,string message, List<string> AtMobiles = null)
+        public static async Task<SendResult> SendMessageAsync(string webHookUrl,string message, List<string> AtMobiles = null,bool isAtAll = false)
         {
             if (string.IsNullOrWhiteSpace(message) || string.IsNullOrEmpty(webHookUrl))
             {
@@ -43,7 +44,7 @@ namespace DingtalkChatbotSdk
             }
             else
             {
-                msg.at.IsAtAll = true;
+               if(isAtAll) msg.at.IsAtAll = true;
             }
 
             var json = msg.ToJson();
