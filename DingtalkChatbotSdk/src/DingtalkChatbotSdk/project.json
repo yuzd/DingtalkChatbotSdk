@@ -1,0 +1,109 @@
+﻿{
+  "name": "DingtalkChatbotSdk",
+  "version": "1.0.0-*",
+  "authors": [ "zdyu" ],
+  "description": "钉钉群机器人SDK",
+  "packOptions": {
+    "licenseUrl": "https://github.com/yuzd/DingtalkChatbotSdk",
+    "projectUrl": "https://github.com/yuzd/DingtalkChatbotSdk",
+    "requireLicenseAcceptance": false,
+    "tags": [
+      "DingDing",
+      "chat",
+      "robot",
+      "sdk"
+    ]
+  },
+  "buildOptions": {
+    "outputName": "DingtalkChatbotSdk",
+    "embed": [ "**/*.resx", "**/*.txt" ]
+  },
+  "dependencies": {
+  },
+
+  "frameworks": {
+    "net40": {
+      "frameworkAssemblies": {
+        "Microsoft.CSharp": "",
+        "System": "",
+        "System.Core": "",
+        "System.Data.DataSetExtensions": "",
+        "System.Data": "",
+        "System.Runtime.Serialization": "",
+        "System.Net": ""
+      },
+      "dependencies": {
+        "Microsoft.Bcl.Async": "1.0.*",
+        "Newtonsoft.Json": "9.0.*"
+      },
+      "buildOptions": {
+        "define": [ "FW4", "NOASYNC" ],
+        "compile": {
+          "exclude": [
+          ]
+        }
+      }
+
+    },
+    "net45": {
+      "frameworkAssemblies": {
+        "Microsoft.CSharp": "",
+        "System": "",
+        "System.Core": "",
+        "System.Data.DataSetExtensions": "",
+        "System.Data": "",
+        "System.Runtime.Serialization": "",
+        "System.Net": ""
+      },
+      "dependencies": {
+        "Newtonsoft.Json": "9.0.*"
+      },
+      "buildOptions": {
+        "define": [ "FW4" ],
+        "compile": {
+          "exclude": [
+          ]
+        }
+      }
+    },
+    "net451": {
+      "frameworkAssemblies": {
+        "Microsoft.CSharp": "",
+        "System": "",
+        "System.Core": "",
+        "System.Data.DataSetExtensions": "",
+        "System.Data": "",
+        "System.Runtime.Serialization": "",
+        "System.Net": ""
+      },
+      "dependencies": {
+        "Newtonsoft.Json": "9.0.*"
+      },
+      "buildOptions": {
+        "define": [ "FW4" ],
+        "compile": {
+          "exclude": [
+          ]
+        }
+      }
+
+    },
+    "netstandard1.6": {
+      "buildOptions": {
+        "define": [ "FW4", "NETSTANDARD" ],
+        "compile": {
+          "exclude": [
+          ]
+        }
+      },
+      "dependencies": {
+        "NETStandard.Library": "1.6.1",
+        "Microsoft.CSharp": "4.3.0",
+        "System.Runtime.Serialization.Primitives": "4.3.0",
+        "System.Threading.Thread": "4.3.0",
+        "Newtonsoft.Json": "9.0.*",
+        "System.Net.Requests": "4.3.0"
+      }
+    }
+  }
+}
